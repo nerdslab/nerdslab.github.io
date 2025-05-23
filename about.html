@@ -5,9 +5,10 @@
   <title>People - NerDS Lab</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .person { display: flex; align-items: flex-start; margin: 20px 0; }
-    .person img { width: 100px; margin-right: 20px; border-radius: 8px; }
-    .person-info { max-width: 800px; }
+    .research-area-table { width: 100%; margin-bottom: 2em; border-collapse: collapse; }
+    .research-area-table td { vertical-align: top; padding: 10px; }
+    .research-image { width: 250px; border-radius: 8px; }
+    .feature-pubs { margin-top: 10px; }
     h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
   </style>
 </head>
@@ -30,40 +31,87 @@
     <h2>About the NerDS Lab</h2>
     <p>The <strong>Neural Data Science (NerDS) Lab</strong>, led by <strong>Dr. Eva Dyer</strong> at Georgia Tech, develops data-centric machine learning methods to understand complex biological systems. Our interdisciplinary research integrates neuroscience, AI, and representation learning to decode neural computation, interpret behavior, and uncover general principles of biological intelligence.</p>
 
-    <div class="research-area">
-      <h3>🧠 Understanding the Brain Through AI</h3>
-      <img src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Latent space of brain activity" style="max-width: 100%; height: auto;">
-      <p>We create scalable models that decode brain activity across tasks, cell types, and animals. Our foundation models for neuroscience support transfer across sessions and contexts.</p>
-      <p><strong>Featured Paper:</strong> <a href="https://openreview.net/pdf?id=IuU0wcO0mo" style="color: #008b8b;">Multi-session, multi-task neural decoding from distinct cell-types and brain regions (ICLR 2025)</a></p>
-    </div>
+    <table class="research-area-table">
+      <tr>
+        <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Latent space of brain activity"></td>
+        <td>
+          <h3>🧠 Understanding the Brain Through AI</h3>
+          <p>We create scalable models that decode brain activity across tasks, cell types, and animals. Our foundation models for neuroscience support transfer across sessions and contexts.</p>
+          <div class="feature-pubs">
+            <strong>Featured Paper:</strong>
+            <ul>
+              <li><a href="https://openreview.net/pdf?id=IuU0wcO0mo" style="color: #008b8b;">Multi-session, multi-task neural decoding from distinct cell-types and brain regions (ICLR 2025)</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-    <div class="research-area">
-      <h3>🔁 Self-Supervised and Contrastive Learning</h3>
-      <img src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Behavior embeddings" style="max-width: 100%; height: auto;">
-      <p>We apply self-supervised methods to reveal hidden patterns in neural and behavioral data. Our models learn structured representations without labels, discovering multiscale behavior and neural motifs.</p>
-      <p><strong>Featured Paper:</strong> <a href="https://arxiv.org/abs/2303.08811" style="color: #008b8b;">Relax, it doesn’t matter how you get there (NeurIPS 2023)</a></p>
-    </div>
+    <table class="research-area-table">
+      <tr>
+        <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Behavior embeddings"></td>
+        <td>
+          <h3>🔁 Self-Supervised and Contrastive Learning</h3>
+          <p>We apply self-supervised methods to reveal hidden patterns in neural and behavioral data. Our models learn structured representations without labels, discovering multiscale behavior and neural motifs.</p>
+          <div class="feature-pubs">
+            <strong>Featured Paper:</strong>
+            <ul>
+              <li><a href="https://arxiv.org/abs/2303.08811" style="color: #008b8b;">Relax, it doesn’t matter how you get there (NeurIPS 2023)</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-    <div class="research-area">
-      <h3>🌍 Domain Adaptation and Representation Alignment</h3>
-      <img src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Domain adaptation visualization" style="max-width: 100%; height: auto;">
-      <p>We design representation alignment methods that adapt across devices and conditions in time series data. Our channel-selective and Sinkhorn-based techniques improve model robustness and transfer.</p>
-      <p><strong>Featured Paper:</strong> <a href="https://openreview.net/pdf?id=8C8LJIqF4y" style="color: #008b8b;">Time Series Domain Adaptation via Channel-Selective Representation Alignment (TMLR 2025)</a></p>
-    </div>
+    <table class="research-area-table">
+      <tr>
+        <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Domain adaptation visualization"></td>
+        <td>
+          <h3>🌍 Domain Adaptation and Representation Alignment</h3>
+          <p>We design representation alignment methods that adapt across devices and conditions in time series data. Our channel-selective and Sinkhorn-based techniques improve model robustness and transfer.</p>
+          <div class="feature-pubs">
+            <strong>Featured Paper:</strong>
+            <ul>
+              <li><a href="https://openreview.net/pdf?id=8C8LJIqF4y" style="color: #008b8b;">Time Series Domain Adaptation via Channel-Selective Representation Alignment (TMLR 2025)</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-    <div class="research-area">
-      <h3>🧬 Mapping Cell Types from Activity</h3>
-      <img src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Cell type classification" style="max-width: 100%; height: auto;">
-      <p>We build classifiers that use only neural activity to predict cell types and brain regions. Our contrastive approaches generalize across mice and modalities, bridging function and transcriptomics.</p>
-      <p><strong>Featured Paper:</strong> <a href="https://www.biorxiv.org/content/10.1101/2024.11.05.622159.abstract" style="color: #008b8b;">In vivo cell-type and brain region classification via multimodal contrastive learning (ICLR 2025)</a></p>
-    </div>
+    <table class="research-area-table">
+      <tr>
+        <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Cell type classification"></td>
+        <td>
+          <h3>🧬 Mapping Cell Types from Activity</h3>
+          <p>We build classifiers that use only neural activity to predict cell types and brain regions. Our contrastive approaches generalize across mice and modalities, bridging function and transcriptomics.</p>
+          <div class="feature-pubs">
+            <strong>Featured Paper:</strong>
+            <ul>
+              <li><a href="https://www.biorxiv.org/content/10.1101/2024.11.05.622159.abstract" style="color: #008b8b;">In vivo cell-type and brain region classification via multimodal contrastive learning (ICLR 2025)</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
 
-    <div class="research-area">
-      <h3>📊 Graph Learning for Scientific Data</h3>
-      <img src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Graph upsampling illustration" style="max-width: 100%; height: auto;">
-      <p>Our lab advances graph neural network methods to model scientific data. We develop transformers and upsampling techniques for scalable and transferable graph learning.</p>
-      <p><strong>Featured Paper:</strong> <a href="http://proceedings.mlr.press/v202/azabou23a/azabou23a.pdf" style="color: #008b8b;">Half-Hop: A graph upsampling approach for slowing down message passing (ICML 2023)</a></p>
-    </div>
+    <table class="research-area-table">
+      <tr>
+        <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Graph upsampling illustration"></td>
+        <td>
+          <h3>📊 Graph Learning for Scientific Data</h3>
+          <p>Our lab advances graph neural network methods to model scientific data. We develop transformers and upsampling techniques for scalable and transferable graph learning.</p>
+          <div class="feature-pubs">
+            <strong>Featured Paper:</strong>
+            <ul>
+              <li><a href="http://proceedings.mlr.press/v202/azabou23a/azabou23a.pdf" style="color: #008b8b;">Half-Hop: A graph upsampling approach for slowing down message passing (ICML 2023)</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
   </div>
 </section>
-
+</main>
+</body>
+</html>
