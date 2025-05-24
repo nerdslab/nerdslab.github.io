@@ -2,55 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>People - NerDS Lab</title>
+  <title>Code - NerDS Lab</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .person { display: flex; align-items: flex-start; margin: 20px 0; }
-    .person img { width: 100px; margin-right: 20px; border-radius: 8px; }
-    .person-info { max-width: 800px; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
-
-  .code-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 1em; }
-
-.funding-grid img {
-  max-width: 150px;
-  height: auto; }  
-
+    .person {
+      display: flex;
+      align-items: flex-start;
+      margin: 20px 0;
+    }
+    .person img {
+      width: 100px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .person-info {
+      max-width: 800px;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .code-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 1em;
+    }
+    .code-grid img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .code-grid img:hover {
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
-<header>
-  <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
-  <h1>NerDS Lab</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="people.html">People</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="nerdslabcode.html">Code</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
+  <header>
+    <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
+    <h1>NerDS Lab</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="people.html">People</a> |
+      <a href="publications.html">Publications</a> |
+      <a href="nerdslabcode.html">Code</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about" style="padding: 2em 0;">
+      <div class="container">
+        <h2>Code</h2>
+        <p>We build open-source software to support our research in neural decoding, representation learning, and multimodal neuroscience datasets. Explore our packages below:</p>
 
-
-
-<section id="about" style="padding: 2em 0;">
-  <div class="container">
-    <h2>Code</h2>
-    <p>We are fortunate to receive funding from the following sources:</p>
-
-    <div class="code-grid">
-      <img src="images/code/torch_brain.png" alt="torchbrain" />
-      <img src="images/code/temporaldata.png" alt="temporaldata" />
-      <img src="images/code/brainsets.png" alt="brainsets" />
-    </div>
-  </div>
-</section>
-  
+        <div class="code-grid">
+          <a href="https://torch-brain.readthedocs.io/en/latest/index.html" target="_blank">
+            <img src="images/code/torchbrain.png" alt="TorchBrain">
+          </a>
+          <a href="https://temporaldata.readthedocs.io/en/latest/index.html" target="_blank">
+            <img src="images/code/temporaldata.png" alt="TemporalData">
+          </a>
+          <a href="https://brainsets.readthedocs.io/en/latest/index.html" target="_blank">
+            <img src="images/code/brainsets.png" alt="BrainSets">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 NerDS Lab</p>
+  </footer>
+</body>
+</html>
