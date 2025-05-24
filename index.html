@@ -5,21 +5,23 @@
   <title>NerDS Lab</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .slideshow-container {
-      position: relative;
-      max-width: 700px;
-      margin: auto;
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1em;
     }
-
-    .slide {
-      display: none;
-      width: 100%;
-      height: auto;
+    figure {
+      margin-top: 2em;
+      text-align: center;
     }
-
-    .slide img {
-      width: 100%;
-      border-radius: 8px;
+    figure img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    figure figcaption {
+      font-style: italic;
+      color: #555;
+      margin-top: 0.5em;
     }
   </style>
 </head>
@@ -37,36 +39,18 @@
 
   <main>
     <h2>Welcome to the NerDS Lab</h2>
-    <p>We explore neural data science at the intersection of machine learning, neuroscience, and behavior.</p>
+    <p>The Neural Data Science (NerDS) Lab, led by Dr. Eva Dyer at Georgia Tech, builds machine learning methods that help us understand the brain, behavior, and other complex biological systems. We combine neuroscience, AI, and data-driven modeling to uncover representations of neural computation and to build tools for scientific discovery.</p>
 
-    <!-- Slideshow Section -->
-    <div class="slideshow-container">
-      <div class="slide"><img src="files/slideshow/img1.jpg" alt="Slide 1"></div>
-      <div class="slide"><img src="files/slideshow/img2.jpg" alt="Slide 2"></div>
-      <div class="slide"><img src="files/slideshow/img3.jpg" alt="Slide 3"></div>
-      <div class="slide"><img src="files/slideshow/img4.jpg" alt="Slide 4"></div>
-      <div class="slide"><img src="files/slideshow/img5.jpg" alt="Slide 5"></div>
-      <div class="slide"><img src="files/slideshow/img6.jpg" alt="Slide 6"></div>
-    </div>
+    <p>Our research is deeply interdisciplinary, bringing together researchers from neuroscience, computer science, and bioengineering to tackle challenges such as cell-type classification, brain-wide decoding, and behavior modeling. We are particularly focused on developing scalable models that generalize across datasets, species, and experimental conditions.</p>
+
+    <figure>
+      <img src="images/nerds_lab_visualization.png" alt="Visualization of neural decoding and representation learning">
+      <figcaption>Mapping the brain with machine learning: decoding activity, learning structure, and understanding function.</figcaption>
+    </figure>
   </main>
 
   <footer>
     <p>© 2025 NerDS Lab</p>
   </footer>
-
-  <script>
-    let slideIndex = 0;
-    const showSlides = () => {
-      let slides = document.getElementsByClassName("slide");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1; }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3000); // Change every 3 seconds
-    };
-    showSlides();
-  </script>
 </body>
 </html>
