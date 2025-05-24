@@ -1,10 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>NerDS Lab</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .slideshow-container {
+      position: relative;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,12 +34,39 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
   <main>
     <h2>Welcome to the NerDS Lab</h2>
     <p>We explore neural data science at the intersection of machine learning, neuroscience, and behavior.</p>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+      <div class="slide"><img src="files/slideshow/img1.jpg" alt="Slide 1"></div>
+      <div class="slide"><img src="files/slideshow/img2.jpg" alt="Slide 2"></div>
+      <div class="slide"><img src="files/slideshow/img3.jpg" alt="Slide 3"></div>
+      <div class="slide"><img src="files/slideshow/img4.jpg" alt="Slide 4"></div>
+      <div class="slide"><img src="files/slideshow/img5.jpg" alt="Slide 5"></div>
+      <div class="slide"><img src="files/slideshow/img6.jpg" alt="Slide 6"></div>
+    </div>
   </main>
+
   <footer>
     <p>© 2025 NerDS Lab</p>
   </footer>
+
+  <script>
+    let slideIndex = 0;
+    const showSlides = () => {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change every 3 seconds
+    };
+    showSlides();
+  </script>
 </body>
 </html>
