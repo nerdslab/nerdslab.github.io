@@ -2,37 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>People - NerDS Lab</title>
+  <title>NerDS Lab</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .person { display: flex; align-items: flex-start; margin: 20px 0; }
-    .person img { width: 100px; margin-right: 20px; border-radius: 8px; }
-    .person-info { max-width: 800px; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007c91;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2em 1em;
+    }
+    h2, h3 {
+      color: #005f73;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "\2022";
+      color: #007c91;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    .funding-logos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: 2em 0;
+    }
+    .funding-logos img {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+    }
+    footer {
+      text-align: center;
+      padding: 1em;
+      background: #eee;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-<header>
-  <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
-  <h1>NerDS Lab</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="people.html">People</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="nerdslabcode.html">Code</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-  
-  <h2>Welcome to the NerDS Lab</h2>
-  <p>The Neural Data Science (NerDS) Lab builds machine learning methods that help us understand the brain, behavior, and other complex datasets. We combine neuroscience, AI, and data-driven modeling to uncover representations of neural computation and to build tools for scientific discovery.</p>
+  <header>
+    <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
+    <h1>NerDS Lab</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="people.html">People</a> |
+      <a href="publications.html">Publications</a> |
+      <a href="nerdslabcode.html">Code</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Welcome to the NerDS Lab</h2>
+    <p>We develop machine learning methods to decode the brain and uncover the computational principles behind behavior and intelligence.</p>
+
+    <img src="images/mainpage.jpg" alt="Brain ML Visualization" style="width: 300px; display: block; margin: 2em auto; border-radius: 8px;">
+
+    <h3>What We Do</h3>
+    <ul>
+      <li>🧠 Decode neural activity across brain regions and species using scalable models</li>
+      <li>🔁 Discover structure in behavior and physiology using self-supervised learning</li>
+      <li>📊 Build robust models with domain adaptation and representation alignment</li>
+      <li>🔬 Develop open-source tools for neuroscience and time series modeling (<a href="nerdslabcode.html">Code</a>)</li>
+    </ul>
+
+    <h3>📰 Recent News</h3>
+    <ul>
+      <li><strong>Jan 2025:</strong> New paper on contrastive learning + optimal transport at <a href="https://nips.cc/">NeurIPS 2024</a></li>
+      <li><strong>July 2024:</strong> ICML paper reveals spectral bias in class imbalance</li>
+      <li><strong>June 2024:</strong> Timeseries transformers with data-adaptive embeddings accepted at ICLR</li>
+    </ul>
+    <p><a href="news.html">More news →</a></p>
 
 
-</main>
-
+  </main>
   <footer>
+    <p>📍 Based at the University of Pennsylvania | <a href="https://github.com/nerdslab" target="_blank">GitHub</a></p>
     <p>© 2025 NerDS Lab</p>
   </footer>
 </body>
