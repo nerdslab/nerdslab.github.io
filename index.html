@@ -2,80 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NerDS Lab</title>
+  <title>People - NerDS Lab</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #ffffff;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #007c91;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2em 1em;
-    }
-    h2, h3 {
-      color: #005f73;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    ul li::before {
-      content: "\2022";
-      color: #007c91;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
-    .funding-logos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      align-items: center;
-      margin: 2em 0;
-    }
-    .funding-logos img {
-      max-width: 100px;
-      max-height: 100px;
-      object-fit: contain;
-    }
-    footer {
-      text-align: center;
-      padding: 1em;
-      background: #eee;
-      font-size: 0.9em;
-    }
+    .research-area-table { width: 100%; margin-bottom: 2em; border-collapse: collapse; }
+    .research-area-table td { vertical-align: top; padding: 10px; }
+    .research-image { width: 200px; border-radius: 8px; }
+    .feature-pubs { margin-top: 10px; }
+    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+
+  .funding-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 1em; }
+
+.funding-grid img {
+  max-width: 150px;
+  height: auto; }  
   </style>
 </head>
 <body>
-  <header>
-    <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
-    <h1>NerDS Lab</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="people.html">People</a> |
-      <a href="publications.html">Publications</a> |
-      <a href="nerdslabcode.html">Code</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
+  <h1>NerDS Lab</h1>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="people.html">People</a> |
+    <a href="publications.html">Publications</a> |
+    <a href="nerdslabcode.html">Code</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+  
   <main>
     <h2>Welcome to the NerDS Lab</h2>
     <p>We develop machine learning methods to decode the brain and uncover the computational principles behind behavior and intelligence.</p>
