@@ -11,6 +11,18 @@
     .research-image { width: 200px; border-radius: 8px; }
     .feature-pubs { margin-top: 10px; }
     h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+
+  .funding-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 1em; }
+
+.funding-grid img {
+  max-width: 100px;
+  height: auto; }  
   </style>
 </head>
 <body>
@@ -125,14 +137,12 @@
     <h2>Funding</h2>
     <p>We are fortunate to receive funding from the following sources:</p>
 
-    <table style="width: 150%; border-spacing: 10px; text-align: center;">
-      <tr>
-        <td><img src="images/funding/nihlogo.png" alt="Funder 1" style="width: 150px;"></td>
-        <td><img src="images/funding/NSF_Logo.jpg" alt="Funder 2" style="width: 150px;"></td>
-        <td><img src="images/funding/cifarlogo.jpg" alt="Funder 3" style="width: 150px;"></td>
-        <td><img src="images/funding/pennlogo.png" alt="Funder 4" style="width: 150px;"></td>
-      </tr>
-    </table>
+    <div class="funding-grid">
+      <img src="images/funding/nihlogo.png" alt="NIH" />
+      <img src="images/funding/NSF_Logo.jpg" alt="NSF" />
+      <img src="images/funding/cifarlogo.jpg" alt="CIFAR" />
+      <img src="images/funding/pennlogo.png" alt="Penn" />
+    </div>
   </div>
 </section>
   
