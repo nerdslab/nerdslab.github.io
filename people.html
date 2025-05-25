@@ -1,102 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  <meta charset="UTF-8">
-  <title>People - NerDS Lab</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;600&family=Work+Sans:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Lato:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  
+<head>
+  <meta charset="UTF-8">
+  <title>People – nerds lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-
     body {
-      padding: 2em;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
       line-height: 1.6;
+      color: #222;
+      background-color: #fff;
     }
-    .font-sample {
-      margin-bottom: 2em;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
     }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-title img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .logo-title h1 {
+      margin: 0;
+      font-family: 'Major Mono Display', monospace;
+      font-size: 48px;
+      font-weight: 400;
+      text-transform: none;
+      color: #222;
+    }
+
+    nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95em;
+      padding: 0 6px;
+    }
+
+    nav a:hover {
+      color: #007acc;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3em 2em;
+    }
+
     h2 {
-      font-size: 1.5em;
-      margin-bottom: 0.2em;
+      font-size: 1.8em;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
     }
-    p {
-      font-size: 1em;
+
+    h3 {
+      margin-top: 2em;
+      font-size: 1.2em;
     }
 
-    .inter       { font-family: 'Inter', sans-serif; }
-    .roboto      { font-family: 'Roboto', sans-serif; }
-    .worksans    { font-family: 'Work Sans', sans-serif; }
-    .ibmplex     { font-family: 'IBM Plex Sans', sans-serif; }
-    .lato        { font-family: 'Lato', sans-serif; }
-    .sourcesans  { font-family: 'Source Sans Pro', sans-serif; }
-  
-    .research-area-table { width: 100%; margin-bottom: 2em; border-collapse: collapse; }
-    .research-area-table td { vertical-align: top; padding: 10px; }
-    .research-image { width: 200px; border-radius: 8px; }
-    .feature-pubs { margin-top: 10px; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    .person {
+      display: flex;
+      align-items: flex-start;
+      margin: 30px 0;
+    }
 
-  .funding-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 1em; }
+    .person img {
+      width: 180px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
 
-.funding-grid img {
-  max-width: 150px;
-  height: auto; }  
+    .person-info {
+      max-width: 750px;
+    }
 
-  .person { display: flex; align-items: flex-start; margin: 20px 0; }
-  .person img { width: 200px; margin-right: 20px; border-radius: 8px; }
-  .person-info { max-width: 800px; }
-  h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    ul {
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4em;
+      padding: 2em;
+      background: #f5f5f5;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .person {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .person img {
+        margin-bottom: 1em;
+      }
+
+      .person-info {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
+
 <header>
-  <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
-  <h1>NerDS Lab</h1>
+  <div class="logo-title">
+    <img src="images/logo_outline.png" alt="nerds lab logo">
+    <h1>nerds lab</h1>
+  </div>
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="people.html">People</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="nerdslabcode.html">Code</a> |
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="nerdslabcode.html">Code</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+
 <main>
+  <h2>People</h2>
 
-
-<h2>People</h2>
-
+  <!-- Main PI -->
   <h3>Principal Investigator</h3>
-        <div class="person">
-          <img src="images/people/eva.png" alt="Eva Dyer">
-          <div class="person-info">
-            <h3>Eva Dyer</h3>
-            <p>Eva Dyer (she/they) is the Rachleff Family Associate Professor at the University of Pennsylvania. Dr. Dyer leads the NerDS Lab, which focuses on representation learning, generative modeling, and AI for science. A key area of the lab’s research focuses on AI for neuroscience, where they aim to develop tools to better understand the brain and neural computation, and to uncover abstractions of natural intelligence for creating new brain-inspired AI. Eva earned all of their degrees in Electrical & Computer Engineering, including a Ph.D. and M.S. from Rice University and a B.S. from the University of Miami. Eva has received numerous honors, including a Sloan Fellowship, NSF CAREER Award, McKnight Foundation Technological Innovations in Neuroscience Award, and CIFAR Azrieli Global Scholar Award.</p>
-            <p><a href="https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl=en">Google Scholar</a></p>
-          </div>
-        </div>
+  <div class="person">
+    <img src="images/people/eva.png" alt="Eva Dyer">
+    <div class="person-info">
+      <h3>Eva Dyer</h3>
+      <p>Eva Dyer (she/they) is the Rachleff Family Associate Professor at the University of Pennsylvania. Dr. Dyer leads the NerDS Lab, which focuses on representation learning, generative modeling, and AI for science. A key area of the lab’s research focuses on AI for neuroscience, where they aim to develop tools to better understand the brain and neural computation, and to uncover abstractions of natural intelligence for creating new brain-inspired AI.</p>
+      <p><a href="https://scholar.google.com/citations?user=Sb_jcHcAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+    </div>
+  </div>
 
+  <!-- Postdocs -->
+  <h3>Postdocs</h3>
+  <div class="person">
+    <img src="images/people/sergey1.jpg" alt="Sergey Shuvaev">
+    <div class="person-info">
+      <h3>Sergey Shuvaev</h3>
+      <p>Joint postdoc with the NerDS and Pesaran labs. Sergey’s research focuses on biologically informed models of decision-making, integrating AI with neuroscience. He holds degrees from MIPT and has worked at Cold Spring Harbor Lab.</p>
+      <p><a href="https://shuvaev.me/" target="_blank">Personal Site</a></p>
+    </div>
+  </div>
 
-
-  
-<h3>Postdocs</h3>
-
-        <div class="person">
-          <img src="images/people/sergey1.jpg" alt="Sergey Shuvaev">
-          <div class="person-info">
-            <h3>Sergey Shuvaev</h3>
-            <p>Sergey Shuvaev is a joint postdoc with the NerDS and Pesaran lab at UPenn. He completed his B.Sc., M.Sc., and Ph.D. in Applied Mathematics and Physics at the Moscow Institute of Physics and Technology. His Ph.D. focused on machine-learning models of behavior, which he designed in residence at Cold Spring Harbor Laboratory. He devoted his B.Sc. years to developing computer-vision pipelines for neuroimaging, followed by complementing his computational background with experience in electrical engineering during his M.Sc. Sergey is interested in biologically informed models of decision-making, where he combines computational neuroscience and artificial intelligence. His research is currently focused on curating data and building neuro-AI foundation models toward better clinical outcomes in behavioral disorders. Outside work, Sergey is a fan of hiking, cycling, and playing musical instruments.</p>
-            <p><a href="https://shuvaev.me/">Personal Site</a></p>
-          </div>
-        </div>
-
+  <!-- PhD Students -->
   <h3>PhD Students</h3>
-
           <div class="person">
           <img src="images/people/alex.jpg" alt="Alexandre Andre">
           <div class="person-info">
@@ -168,41 +250,39 @@
             
           </div>
         </div>
-      
-        <h3>Undergraduate Students</h3>
-        
-        <div class="person">
-          <img src="images/people/julie.jpg" alt="Julie Young">
-          <div class="person-info">
-            <h3>Julie Young</h3>
-            <p>Julie Young is a third-year undergraduate student studying Computer Science at the Georgia Institute of Technology. She is interested in how machine learning can be applied to neuroscience topics.</p>
-            
-          </div>
-        </div>
-        <h3>Research Affiliates</h3>
+  <!-- Undergrads -->
+  <h3>Undergraduate Students</h3>
+  <div class="person">
+    <img src="images/people/julie.jpg" alt="Julie Young">
+    <div class="person-info">
+      <h3>Julie Young</h3>
+      <p>Julie is a third-year undergrad studying CS at Georgia Tech, interested in the intersection of machine learning and neuroscience.</p>
+    </div>
+  </div>
 
-        <div class="person">
-          <img src="images/logo.png" alt="Aidan Schneider">
-          <div class="person-info">
-            <h3>Aidan Schneider</h3>
-            <p>Aidan is a PhD student in Computational & Systems Biology at Washington University in St. Louis in the Hengen Lab and works in close collaboration with the NerDS Lab.</p>
-            
-          </div>
-        </div>
-        <h3>Interns</h3>
+  <!-- Affiliates -->
+  <h3>Research Affiliates</h3>
+  <div class="person">
+    <img src="images/logo.png" alt="Aidan Schneider">
+    <div class="person-info">
+      <h3>Aidan Schneider</h3>
+      <p>PhD student at Washington University in the Hengen Lab, collaborating closely with the NerDS Lab.</p>
+    </div>
+  </div>
 
-        <div class="person">
-          <img src="images/logo.png" alt="Pablo Vempala">
-          <div class="person-info">
-            <h3>Pablo Vempala</h3>
-            <p>Pablo Vempala is a Senior at Midtown High School and a Research Assistant in the NerDS Lab at Georgia Tech. He is currently working on developing brain decoding methods for C elegans.</p>
-            
-          </div>
-        </div>
+  <!-- Interns -->
+  <h3>Interns</h3>
+  <div class="person">
+    <img src="images/logo.png" alt="Pablo Vempala">
+    <div class="person-info">
+      <h3>Pablo Vempala</h3>
+      <p>Senior at Midtown High School and Research Assistant in the NerDS Lab, working on brain decoding for C. elegans.</p>
+    </div>
+  </div>
 
-<h3>Alumni</h3>
-
-<ul>
+  <!-- Alumni -->
+  <h3>Alumni</h3>
+  <ul>
   <!-- 2024 -->
   <li><strong><a href="https://www.mehai.dev/" target="_blank">Mehdi Azabou</a></strong>, Ph.D. (2020–2024) – Outstanding Graduate Student in ECE (2024), Spotlight @ NeurIPS; Thesis: <em>Building a foundation model for neuroscience</em> → Postdoc at Columbia University</li>
   <li><strong><a href="https://ranliu98.github.io/" target="_blank">Ran Liu</a></strong>, Ph.D. (2019–2024) – Rising Star in EECS (2023), CSIP Research Award (2023), Oral @ NeurIPS; Thesis: <em>Generalizable and Explainable Methods for Learning from Physiological Data and Beyond</em> → Now at Apple</li>
@@ -234,10 +314,14 @@
   <li><strong>TJ LaGrow</strong>, Ph.D. (2017–2019) – NSF GRFP Honorable Mention → Now in Shella Keilholz’s lab at Emory</li>
   <li><strong>Alexis Webber</strong>, Undergrad (2019) – Charles Hancock Award for Neuroengineering Research → Now at Alpha Omega</li>
 </ul>
-        
 </main>
+
+  <p> </p>
+
 <footer>
-  <p>© 2025 NerDS Lab</p>
+  <p>📍 Based at the University of Pennsylvania | <a href="https://github.com/nerdslab" target="_blank">GitHub</a></p>
+  <p>© 2025 NerDS l=Lab</p>
 </footer>
+
 </body>
 </html>
