@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>NerDS Lab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <title>nerds lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
+      color: #222;
+      background-color: #fff;
     }
 
     .hero {
@@ -25,7 +27,7 @@
       position: absolute;
       bottom: 30px;
       left: 40px;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.65);
       color: white;
       padding: 20px 30px;
       border-radius: 8px;
@@ -33,32 +35,20 @@
       max-width: 600px;
     }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1em 2em 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.85);
-  z-index: 10;
-  box-sizing: border-box;
-}
-
-nav {
-  margin-left: 20px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-}
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 10;
+      box-sizing: border-box;
+      flex-wrap: wrap;
+    }
 
     .logo-title {
       display: flex;
@@ -72,16 +62,56 @@ nav a {
 
     .logo-title h1 {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2em;
-      font-weight: 700;
+      font-family: 'Major Mono Display', monospace;
+      font-size: 48px;
+      font-weight: 400;
       color: #222;
+      text-transform: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95em;
+      padding: 0 6px;
+    }
+
+    nav a:hover {
+      color: #007acc;
     }
 
     main {
-      padding: 2em;
       max-width: 800px;
       margin: 0 auto;
+      padding: 3em 2em 2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 1em;
+    }
+
+    h3 {
+      margin-top: 1.5em;
+      font-size: 1.2em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
     }
 
     footer {
@@ -92,41 +122,52 @@ nav a {
       font-size: 0.9em;
     }
 
-    h2, h3 {
-      margin-top: 1.5em;
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
     }
 
-    ul {
-      padding-left: 1.2em;
-    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-    li {
-      margin-bottom: 0.5em;
+      nav {
+        justify-content: center;
+        width: 100%;
+        margin-top: 1em;
+      }
+
+      .hero-text {
+        font-size: 1em;
+        left: 20px;
+        right: 20px;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="hero">
+    <header>
+      <div class="logo-title">
+        <img src="images/logo_outline.png" alt="nerds lab logo">
+        <h1>nerds lab</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="people.html">People</a>
+        <a href="publications.html">Publications</a>
+        <a href="nerdslabcode.html">Code</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
     <div class="hero-text">
       We develop machine learning tools to decode brain activity and uncover the computational principles behind intelligence and behavior.
     </div>
   </div>
-
-  <header>
-    <div class="logo-title">
-      <img src="images/logo_outline.png" alt="NerDS Lab Logo">
-      <h1>NerDS Lab</h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="nerdslabcode.html">Code</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
   <main>
     <h2>Welcome to the NerDS Lab</h2>
@@ -139,6 +180,8 @@ nav a {
       <li>📊 Build robust models with domain adaptation and representation alignment</li>
       <li>🔬 Develop open-source tools for neuroscience and time series modeling (<a href="nerdslabcode.html">Code</a>)</li>
     </ul>
+    <p> </p>
+    
   </main>
 
   <footer>
