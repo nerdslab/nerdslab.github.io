@@ -120,27 +120,31 @@
     }
 
     @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-      nav {
-        justify-content: center;
-        width: 100%;
-        margin-top: 1em;
-      }
+  nav {
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+  }
 
-      .hero {
-        height: 40vh;
-      }
+  .hero {
+    height: 35vh; /* cropped height for mobile */
+    background-position: center top;
+  }
 
-      .hero-text {
-        font-size: 1em;
-        left: 20px;
-        right: 20px;
-      }
-    }
+  .hero-text {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    left: 20px;
+    right: 20px;
+    bottom: 15px;
+    padding: 15px 20px;
+  }
+}
+
   </style>
 </head>
 <body>
