@@ -33,18 +33,32 @@
       max-width: 600px;
     }
 
-    header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 1em 2em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.85);
-      z-index: 10;
-    }
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+nav {
+  margin-left: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
 
     .logo-title {
       display: flex;
@@ -62,17 +76,6 @@
       font-size: 2em;
       font-weight: 700;
       color: #222;
-    }
-
-    nav {
-      margin-top: 0;
-    }
-
-    nav a {
-      margin-left: 12px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
     }
 
     main {
