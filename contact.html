@@ -1,86 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  <meta charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
   <title>People - NerDS Lab</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;600&family=Work+Sans:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Lato:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-
     body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
       padding: 2em;
       line-height: 1.6;
     }
-    .font-sample {
-      margin-bottom: 2em;
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1em 2em;
     }
+
+    header img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95em;
+      padding: 0 6px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-top: 2em;
+    }
+
     h2 {
       font-size: 1.5em;
-      margin-bottom: 0.2em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 1em;
     }
-    p {
-      font-size: 1em;
+
+    .person { display: flex; align-items: flex-start; margin: 20px 0; }
+    .person img { width: 100px; margin-right: 20px; border-radius: 8px; }
+    .person-info { max-width: 800px; }
+
+    footer {
+      text-align: center;
+      margin-top: 3em;
+      padding-top: 1em;
+      border-top: 1px solid #ccc;
+      font-size: 0.9em;
+      color: #666;
     }
 
-    .inter       { font-family: 'Inter', sans-serif; }
-    .roboto      { font-family: 'Roboto', sans-serif; }
-    .worksans    { font-family: 'Work Sans', sans-serif; }
-    .ibmplex     { font-family: 'IBM Plex Sans', sans-serif; }
-    .lato        { font-family: 'Lato', sans-serif; }
-    .sourcesans  { font-family: 'Source Sans Pro', sans-serif; }
-  
-    .research-area-table { width: 100%; margin-bottom: 2em; border-collapse: collapse; }
-    .research-area-table td { vertical-align: top; padding: 10px; }
-    .research-image { width: 200px; border-radius: 8px; }
-    .feature-pubs { margin-top: 10px; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+    }
 
-  .funding-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 1em; }
-
-.funding-grid img {
-  max-width: 150px;
-  height: auto; }  
-
-  .person { display: flex; align-items: flex-start; margin: 20px 0; }
-  .person img { width: 100px; margin-right: 20px; border-radius: 8px; }
-  .person-info { max-width: 800px; }
-  h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    img.centered-img {
+      width: 400px;
+      display: block;
+      margin: 2em auto;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
+
 <header>
-  <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
+  <img src="images/logo_outline.png" alt="NerDS Lab Logo">
   <h1>NerDS Lab</h1>
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="people.html">People</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="nerdslabcode.html">Code</a> |
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="nerdslabcode.html">Code</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+
 <main>
+  <h2>Contact</h2>
+  <p>Coming soon...</p>
 
+  <img src="images/mainpage.jpg" alt="Intelligence" class="centered-img">
+</main>
 
-<h2>Contact</h2>
+<footer>
+  <p>📍 Based at the University of Pennsylvania | <a href="https://github.com/nerdslab" target="_blank">GitHub</a></p>
+  <p>© 2025 NerDS Lab</p>
+</footer>
 
-Coming soon...
-
-
-<img src="images/mainpage.jpg" alt="Intelligence" style="width: 400px; display: block; margin: 2em auto; border-radius: 8px;">
-
-    
-  </main>
-  <footer>
-    <p>📍 Based at the University of Pennsylvania | <a href="https://github.com/nerdslab" target="_blank">GitHub</a></p>
-    <p>© 2025 NerDS Lab</p>
-  </footer>
 </body>
-</html>  
+</html>
