@@ -3,8 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>People - NerDS Lab</title>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;600&family=Work+Sans:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Lato:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
   <style>
+
+    body {
+      padding: 2em;
+      line-height: 1.6;
+    }
+    .font-sample {
+      margin-bottom: 2em;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1em;
+    }
+
+    .inter       { font-family: 'Inter', sans-serif; }
+    .roboto      { font-family: 'Roboto', sans-serif; }
+    .worksans    { font-family: 'Work Sans', sans-serif; }
+    .ibmplex     { font-family: 'IBM Plex Sans', sans-serif; }
+    .lato        { font-family: 'Lato', sans-serif; }
+    .sourcesans  { font-family: 'Source Sans Pro', sans-serif; }
+    
+    .research-area-table { width: 100%; margin-bottom: 2em; border-collapse: collapse; }
+    .research-area-table td { vertical-align: top; padding: 10px; }
+    .research-image { width: 200px; border-radius: 8px; }
+    .feature-pubs { margin-top: 10px; }
+    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+
+  .funding-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 1em; }
+
+.funding-grid img {
+  max-width: 150px;
+  height: auto; }  
+
     .person { display: flex; align-items: flex-start; margin: 20px 0; }
     .person img { width: 100px; margin-right: 20px; border-radius: 8px; }
     .person-info { max-width: 800px; }
