@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>People - NerDS Lab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
     body {
@@ -16,7 +16,15 @@
     header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       padding: 1em 2em;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #eee;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
     }
 
     header img {
@@ -25,16 +33,17 @@
     }
 
     header h1 {
-      font-size: 1.8em;
+      font-family: 'Major Mono Display', monospace;
+      font-size: 2em;
       margin: 0;
-      font-weight: 600;
+      white-space: nowrap;
     }
 
     nav {
-      margin-left: auto;
       display: flex;
-      gap: 8px;
+      gap: 10px;
       flex-wrap: wrap;
+      margin-top: 0.5em;
     }
 
     nav a {
@@ -43,6 +52,10 @@
       font-weight: 500;
       font-size: 0.95em;
       padding: 0 6px;
+    }
+
+    nav a:hover {
+      color: #007acc;
     }
 
     main {
@@ -58,9 +71,21 @@
       margin-bottom: 1em;
     }
 
-    .person { display: flex; align-items: flex-start; margin: 20px 0; }
-    .person img { width: 100px; margin-right: 20px; border-radius: 8px; }
-    .person-info { max-width: 800px; }
+    .person {
+      display: flex;
+      align-items: flex-start;
+      margin: 20px 0;
+    }
+
+    .person img {
+      width: 100px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+
+    .person-info {
+      max-width: 800px;
+    }
 
     footer {
       text-align: center;
@@ -82,13 +107,28 @@
       margin: 2em auto;
       border-radius: 8px;
     }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        justify-content: center;
+        width: 100%;
+        margin-top: 1em;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="images/logo_outline.png" alt="NerDS Lab Logo">
-  <h1>NerDS Lab</h1>
+  <div class="header-left">
+    <img src="images/logo_outline.png" alt="NerDS Lab Logo">
+    <h1>NerDS Lab</h1>
+  </div>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
