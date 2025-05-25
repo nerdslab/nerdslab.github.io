@@ -2,66 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>People - NerDS Lab</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;600&family=Work+Sans:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Lato:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  
+  <title>People – nerds lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-
     body {
-      padding: 2em;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
       line-height: 1.6;
-    }
-    .font-sample {
-      margin-bottom: 2em;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-bottom: 0.2em;
-    }
-    p {
-      font-size: 1em;
+      color: #222;
+      background-color: #fff;
     }
 
-    .inter       { font-family: 'Inter', sans-serif; }
-    .roboto      { font-family: 'Roboto', sans-serif; }
-    .worksans    { font-family: 'Work Sans', sans-serif; }
-    .ibmplex     { font-family: 'IBM Plex Sans', sans-serif; }
-    .lato        { font-family: 'Lato', sans-serif; }
-    .sourcesans  { font-family: 'Source Sans Pro', sans-serif; }
-    
-    .research-area-table { width: 100%; margin-bottom: 2em; border-collapse: collapse; }
-    .research-area-table td { vertical-align: top; padding: 10px; }
-    .research-image { width: 200px; border-radius: 8px; }
-    .feature-pubs { margin-top: 10px; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+    }
 
-  .funding-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 1em; }
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
 
-.funding-grid img {
-  max-width: 150px;
-  height: auto; }  
+    .logo-title img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .logo-title h1 {
+      margin: 0;
+      font-family: 'Major Mono Display', monospace;
+      font-size: 48px;
+      font-weight: 400;
+      text-transform: none;
+      color: #222;
+    }
+
+    nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 0.95em;
+      padding: 0 6px;
+    }
+
+    nav a:hover {
+      color: #007acc;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 3em 2em;
+    }
   </style>
 </head>
 <body>
+
 <header>
-  <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
-  <h1>NerDS Lab</h1>
+  <div class="logo-title">
+    <img src="images/logo_outline.png" alt="nerds lab logo">
+    <h1>nerds lab</h1>
+  </div>
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="people.html">People</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="nerdslabcode.html">Code</a> |
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="people.html">People</a>
+    <a href="publications.html">Publications</a>
+    <a href="nerdslabcode.html">Code</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+
 <main>
 
 <h2>Publications</h2>
