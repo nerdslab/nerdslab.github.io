@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About - nerds lab</title>
-  <!-- Fonts -->
+  <title>About – nerds lab</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 2em;
+      padding: 0;
       line-height: 1.6;
       background-color: #fff;
       color: #222;
@@ -22,24 +21,25 @@
       justify-content: space-between;
       padding: 1em 2em;
       flex-wrap: wrap;
-      border-bottom: 2px solid #eee;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
     }
 
-    .header-left {
+    .logo-title {
       display: flex;
       align-items: center;
     }
 
-    header img {
+    .logo-title img {
       height: 60px;
       margin-right: 15px;
     }
 
-    header h1 {
+    .logo-title h1 {
+      margin: 0;
       font-family: 'Major Mono Display', monospace;
       font-size: 48px;
       font-weight: 400;
-      margin: 0;
       text-transform: none;
     }
 
@@ -62,11 +62,21 @@
       color: #007acc;
     }
 
+    main {
+      padding: 2em;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
     h2 {
       font-size: 1.5em;
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
       margin-bottom: 1em;
+    }
+
+    h3 {
+      margin-top: 2em;
     }
 
     .research-area-table {
@@ -118,29 +128,27 @@
   </style>
 </head>
 <body>
-<header>
-  <div class="header-left">
-    <img src="images/logo_outline.png" alt="nerds lab logo">
-    <h1>nerds lab</h1>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="people.html">People</a>
-    <a href="publications.html">Publications</a>
-    <a href="nerdslabcode.html">Code</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <header>
+    <div class="logo-title">
+      <img src="images/logo_outline.png" alt="nerds lab logo">
+      <h1>nerds lab</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="people.html">People</a>
+      <a href="publications.html">Publications</a>
+      <a href="nerdslabcode.html">Code</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<main>
+  <main>
 
-<div class="font-sample inter">
-  <h2>About the NerDS Lab</h2>
-  <p>The <strong>Neural Data Science (NerDS) Lab</strong> develops data-centric machine learning methods to understand complex biological systems. Our interdisciplinary research integrates neuroscience, AI, and representation learning to decode neural computation, interpret behavior, and uncover general principles of biological intelligence.</p>
-</div>
+    <h2>About the NerDS Lab</h2>
+    <p>The <strong>Neural Data Science (NerDS) Lab</strong> develops data-centric machine learning methods to understand complex biological systems. Our interdisciplinary research integrates neuroscience, AI, and representation learning to decode neural computation, interpret behavior, and uncover general principles of biological intelligence.</p>
 
- 
+    <!-- Research Areas -->
     <table class="research-area-table">
       <tr>
         <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Latent space of brain activity"></td>
@@ -148,10 +156,10 @@
           <h3>🧠 Understanding the Brain Through AI</h3>
           <p>We create scalable models that decode brain activity across tasks, cell types, and animals. Our foundation models for neuroscience support transfer across sessions and contexts.</p>
           <div class="feature-pubs">
-            <strong>Featured Paper:</strong>
+            <strong>Featured Papers:</strong>
             <ul>
-              <li><a href="https://arxiv.org/pdf/2310.16046" style="color: #008b8b;">A unified, scalable framework for neural population decoding (NeurIPS 2023)</a></li>
-              <li><a href="https://openreview.net/pdf?id=IuU0wcO0mo" style="color: #008b8b;">Multi-session, multi-task neural decoding from distinct cell-types and brain regions (ICLR 2025)</a></li>
+              <li><a href="https://arxiv.org/pdf/2310.16046" target="_blank">A unified, scalable framework for neural population decoding (NeurIPS 2023)</a></li>
+              <li><a href="https://openreview.net/pdf?id=IuU0wcO0mo" target="_blank">Multi-session, multi-task neural decoding (ICLR 2025)</a></li>
             </ul>
           </div>
         </td>
@@ -165,10 +173,10 @@
           <h3>🔁 Self-Supervised and Contrastive Learning</h3>
           <p>We apply self-supervised methods to reveal hidden patterns in neural and behavioral data. Our models learn structured representations without labels, discovering multiscale behavior and neural motifs.</p>
           <div class="feature-pubs">
-            <strong>Featured Paper:</strong>
+            <strong>Featured Papers:</strong>
             <ul>
-              <li><a href="https://arxiv.org/abs/2303.08811" style="color: #008b8b;">Relax, it doesn’t matter how you get there (NeurIPS 2023)</a></li>
-              <li><a href="https://arxiv.org/pdf/2111.02338" style="color: #008b8b;">Drop, Swap, and Generate (NeurIPS 2021, Oral)</a></li>
+              <li><a href="https://arxiv.org/abs/2303.08811" target="_blank">Relax, it doesn’t matter how you get there (NeurIPS 2023)</a></li>
+              <li><a href="https://arxiv.org/pdf/2111.02338" target="_blank">Drop, Swap, and Generate (NeurIPS 2021, Oral)</a></li>
             </ul>
           </div>
         </td>
@@ -182,10 +190,10 @@
           <h3>🌍 Domain Adaptation and Representation Alignment</h3>
           <p>We design representation alignment methods that adapt across devices and conditions in time series data. Our channel-selective and Sinkhorn-based techniques improve model robustness and transfer.</p>
           <div class="feature-pubs">
-            <strong>Featured Paper:</strong>
+            <strong>Featured Papers:</strong>
             <ul>
-              <li><a href="https://openreview.net/pdf?id=8C8LJIqF4y" style="color: #008b8b;">Channel-Selective Representation Alignment (TMLR 2025)</a></li>
-              <li><a href="https://proceedings.mlr.press/v139/lin21a.html" style="color: #008b8b;">Moving data through anchor points (ICML 2021)</a></li>
+              <li><a href="https://openreview.net/pdf?id=8C8LJIqF4y" target="_blank">Channel-Selective Representation Alignment (TMLR 2025)</a></li>
+              <li><a href="https://proceedings.mlr.press/v139/lin21a.html" target="_blank">Moving data through anchor points (ICML 2021)</a></li>
             </ul>
           </div>
         </td>
@@ -199,10 +207,10 @@
           <h3>🧬 Mapping Cell Types from Activity</h3>
           <p>We build classifiers that use only neural activity to predict cell types and brain regions. Our contrastive approaches generalize across mice and modalities, bridging function and transcriptomics.</p>
           <div class="feature-pubs">
-            <strong>Featured Paper:</strong>
+            <strong>Featured Papers:</strong>
             <ul>
-              <li><a href="https://www.biorxiv.org/content/10.1101/2024.11.05.622159.abstract" style="color: #008b8b;">Multimodal contrastive learning (ICLR 2025)</a></li>
-              <li><a href="https://www.cell.com/cell-reports/pdfExtended/S2211-1247(23)00329-7" style="color: #008b8b;">Transcriptomic cell type structures (Cell Reports 2023)</a></li>
+              <li><a href="https://www.biorxiv.org/content/10.1101/2024.11.05.622159.abstract" target="_blank">Multimodal contrastive learning (ICLR 2025)</a></li>
+              <li><a href="https://www.cell.com/cell-reports/pdfExtended/S2211-1247(23)00329-7" target="_blank">Transcriptomic cell type structures (Cell Reports 2023)</a></li>
             </ul>
           </div>
         </td>
@@ -216,30 +224,28 @@
           <h3>📊 Graph Learning</h3>
           <p>Our lab advances graph neural network methods to model diverse graph datasets. We develop transformers and graph augmentation techniques for scalable and transferable graph learning.</p>
           <div class="feature-pubs">
-            <strong>Featured Paper:</strong>
+            <strong>Featured Papers:</strong>
             <ul>
-              <li><a href="http://proceedings.mlr.press/v202/azabou23a/azabou23a.pdf" style="color: #008b8b;">Half-Hop (ICML 2023)</a></li>
-              <li><a href="https://arxiv.org/abs/2407.11907" style="color: #008b8b;">GraphFM (arXiv 2024)</a></li>
+              <li><a href="http://proceedings.mlr.press/v202/azabou23a/azabou23a.pdf" target="_blank">Half-Hop (ICML 2023)</a></li>
+              <li><a href="https://arxiv.org/abs/2407.11907" target="_blank">GraphFM (arXiv 2024)</a></li>
             </ul>
           </div>
         </td>
       </tr>
     </table>
 
-<section id="about" style="padding: 2em 0;">
-  <div class="container">
-    <h2>Funding</h2>
-    <p>We are fortunate to receive funding from the following sources:</p>
+    <!-- Funding Section -->
+    <section id="funding" style="padding: 2em 0;">
+      <h2>Funding</h2>
+      <p>We are fortunate to receive funding from the following sources:</p>
+      <div class="funding-grid">
+        <img src="images/funding/nihlogo.png" alt="NIH" />
+        <img src="images/funding/NSF_Logo.jpg" alt="NSF" />
+        <img src="images/funding/cifarlogo.jpg" alt="CIFAR" />
+        <img src="images/funding/pennlogo.png" alt="Penn" />
+      </div>
+    </section>
 
-    <div class="funding-grid">
-      <img src="images/funding/nihlogo.png" alt="NIH" />
-      <img src="images/funding/NSF_Logo.jpg" alt="NSF" />
-      <img src="images/funding/cifarlogo.jpg" alt="CIFAR" />
-      <img src="images/funding/pennlogo.png" alt="Penn" />
-    </div>
-  </div>
-</section>
-
-</main>
+  </main>
 </body>
 </html>
