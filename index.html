@@ -1,67 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  <meta charset="UTF-8">
-  <title>People - NerDS Lab</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;600&family=Work+Sans:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Lato:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  
+<head>
+  <meta charset="UTF-8">
+  <title>NerDS Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-
     body {
-      padding: 2em;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
       line-height: 1.6;
     }
-    .font-sample {
-      margin-bottom: 2em;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin-bottom: 0.2em;
-    }
-    p {
-      font-size: 1em;
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      background-image: url('images/mainimg.png');
+      background-size: cover;
+      background-position: center;
     }
 
-    .inter       { font-family: 'Inter', sans-serif; }
-    .roboto      { font-family: 'Roboto', sans-serif; }
-    .worksans    { font-family: 'Work Sans', sans-serif; }
-    .ibmplex     { font-family: 'IBM Plex Sans', sans-serif; }
-    .lato        { font-family: 'Lato', sans-serif; }
-    .sourcesans  { font-family: 'Source Sans Pro', sans-serif; }
-  
-    .research-area-table { width: 100%; margin-bottom: 2em; border-collapse: collapse; }
-    .research-area-table td { vertical-align: top; padding: 10px; }
-    .research-image { width: 200px; border-radius: 8px; }
-    .feature-pubs { margin-top: 10px; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    .hero-text {
+      position: absolute;
+      bottom: 30px;
+      left: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      font-size: 1.2em;
+      max-width: 600px;
+    }
 
-  .funding-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  margin-top: 1em; }
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1em 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 10;
+    }
 
-.funding-grid img {
-  max-width: 150px;
-  height: auto; }  
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      margin-top: 0.5em;
+    }
+
+    nav a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4em;
+      padding: 2em;
+      background: #f5f5f5;
+      font-size: 0.9em;
+    }
+
+    h2, h3 {
+      margin-top: 1.5em;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
   </style>
 </head>
 <body>
-<header>
-  <img src="images/logo_outline.png" alt="NerDS Lab Logo" height="80">
-  <h1>NerDS Lab</h1>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a> |
-    <a href="people.html">People</a> |
-    <a href="publications.html">Publications</a> |
-    <a href="nerdslabcode.html">Code</a> |
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-  
+
+  <div class="hero">
+    <div class="hero-text">
+      We develop machine learning tools to decode brain activity and uncover the computational principles behind intelligence and behavior.
+    </div>
+  </div>
+
+  <header>
+    <img src="images/logo_outline.png" alt="NerDS Lab Logo">
+    <h1>NerDS Lab</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="people.html">People</a> |
+      <a href="publications.html">Publications</a> |
+      <a href="nerdslabcode.html">Code</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <main>
     <h2>Welcome to the NerDS Lab</h2>
     <p>We develop machine learning methods to decode the brain and uncover the computational principles behind behavior and intelligence.</p>
@@ -73,12 +120,12 @@
       <li>📊 Build robust models with domain adaptation and representation alignment</li>
       <li>🔬 Develop open-source tools for neuroscience and time series modeling (<a href="nerdslabcode.html">Code</a>)</li>
     </ul>
-
- 
   </main>
+
   <footer>
     <p>📍 Based at the University of Pennsylvania | <a href="https://github.com/nerdslab" target="_blank">GitHub</a></p>
     <p>© 2025 NerDS Lab</p>
   </footer>
+
 </body>
 </html>
