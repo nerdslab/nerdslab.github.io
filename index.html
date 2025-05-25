@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background-color: #fff;
-    }
-
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
     .hero {
       position: relative;
       width: 100%;
@@ -92,6 +94,8 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 3em 2em 2em;
+      flex: 1;
+      position: relative;
     }
 
     h2 {
