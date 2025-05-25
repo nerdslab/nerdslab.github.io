@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Code - nerds lab</title>
+  <title>Code – nerds lab</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Major+Mono+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
+      padding: 0;
       background-color: #fff;
       color: #222;
+      line-height: 1.6;
     }
 
     header {
@@ -18,8 +20,8 @@
       align-items: center;
       justify-content: space-between;
       padding: 1em 2em;
-      flex-wrap: wrap;
       border-bottom: 2px solid #eee;
+      flex-wrap: wrap;
     }
 
     .header-left {
@@ -136,6 +138,19 @@
       text-decoration: underline;
     }
 
+    footer {
+      text-align: center;
+      margin-top: 4em;
+      padding: 2em 1em;
+      background: #f5f5f5;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -151,6 +166,7 @@
   </style>
 </head>
 <body>
+
 <header>
   <div class="header-left">
     <img src="images/logo_outline.png" alt="nerds lab logo">
