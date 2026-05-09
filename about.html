@@ -77,12 +77,12 @@
     }
 
     h3 {
-      margin-top: 2em;
+      margin-top: 0;
     }
 
     .research-area-table {
       width: 100%;
-      margin-bottom: 2em;
+      margin-bottom: 3em;
       border-collapse: collapse;
     }
 
@@ -92,12 +92,21 @@
     }
 
     .research-image {
-      width: 200px;
+      width: 240px;
       border-radius: 8px;
     }
 
     .feature-pubs {
       margin-top: 10px;
+    }
+
+    .feature-pubs a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .feature-pubs a:hover {
+      text-decoration: underline;
     }
 
     .funding-grid {
@@ -145,6 +154,21 @@
         width: 100%;
         margin-top: 1em;
       }
+
+      .research-area-table,
+      .research-area-table tbody,
+      .research-area-table tr,
+      .research-area-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .research-image {
+        width: 100%;
+        max-width: 320px;
+        display: block;
+        margin: 0 auto 1em auto;
+      }
     }
   </style>
 </head>
@@ -168,22 +192,24 @@
 <main>
   <h2>About the NerDS Lab</h2>
 
-  <p>The <strong>Neural Data Science (NerDS) Lab</strong> develops data-centric machine learning methods to understand complex biological systems. Our interdisciplinary research integrates neuroscience, AI, and representation learning to decode neural computation, interpret behavior, and uncover general principles of biological intelligence.</p>
+  <p>The <strong>Neural Data Science (NerDS) Lab</strong> develops foundation models and representation learning methods for neuroscience, behavior, and biological systems. Our research combines machine learning, neural data analysis, and AI for science to build scalable models that decode neural computation, learn transferable representations across animals and recording modalities, and uncover general principles of biological intelligence.</p>
 
-  <!-- Insert any image if desired -->
-  <!-- <img src="images/about_image.jpg" alt="NerDS Lab Vision" class="centered-img"> -->
+  <p>We work on neural foundation models, self-supervised learning, neural forecasting, graph representation learning, and multimodal AI systems that integrate behavior, neural activity, and biological structure across scales.</p>
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Latent space of brain activity"></td>
+      <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Neural foundation models"></td>
       <td>
-        <h3>🧠 Understanding the Brain Through AI</h3>
-        <p>We create scalable models that decode brain activity across tasks, cell types, and animals. Our foundation models for neuroscience support transfer across sessions and contexts.</p>
+        <h3>🧠 Neural Foundation Models</h3>
+        <p>We develop large-scale foundation models for neural activity that learn transferable representations across animals, brain regions, recording modalities, and behavioral tasks. Our work studies how large-scale pretraining enables zero-shot decoding, neural forecasting, and the discovery of shared computational principles across neural systems.</p>
+
         <div class="feature-pubs">
           <strong>Featured Papers:</strong>
           <ul>
             <li><a href="https://arxiv.org/pdf/2310.16046" target="_blank">A unified, scalable framework for neural population decoding (NeurIPS 2023)</a></li>
             <li><a href="https://openreview.net/pdf?id=IuU0wcO0mo" target="_blank">Multi-session, multi-task neural decoding (ICLR 2025)</a></li>
+            <li><a href="https://arxiv.org/abs/2504.08201" target="_blank">Neural Encoding and Decoding at Scale (ICML 2025)</a></li>
+            <li><a href="https://arxiv.org/abs/2506.05320" target="_blank">Generalizable, real-time neural decoding with hybrid state-space models (NeurIPS 2025)</a></li>
           </ul>
         </div>
       </td>
@@ -192,15 +218,38 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/AugmentedCat.png" alt="Behavior embeddings"></td>
+      <td><img class="research-image" src="images/20250523_1959_Futuristic Neuron Network_simple_compose_01jvzsbj4cesms0r6r6jfrb0w4.png" alt="Neuron identity and brain organization"></td>
+      <td>
+        <h3>🧬 Neuron Identity and Brain Organization</h3>
+        <p>We build machine learning systems that reveal structure in large-scale neural recordings, including representations of neuron identity, brain regions, cell types, and population dynamics. Our models learn from neural activity directly and generalize across animals, sessions, and experimental conditions.</p>
+
+        <div class="feature-pubs">
+          <strong>Featured Papers:</strong>
+          <ul>
+            <li><a href="https://neurips.cc/virtual/2025/poster/115008" target="_blank">Know Thyself by Knowing Others: Learning Neuron Identity from Population Context (NeurIPS 2025)</a></li>
+            <li><a href="https://www.biorxiv.org/content/10.1101/2024.11.05.622159.abstract" target="_blank">In vivo cell-type and brain region classification via multimodal contrastive learning (ICLR 2025)</a></li>
+            <li><a href="https://elifesciences.org/reviewed-preprints/101506" target="_blank">A conserved code for anatomy (eLife 2024)</a></li>
+            <li><a href="https://www.cell.com/cell-reports/pdfExtended/S2211-1247(23)00329-7" target="_blank">Transcriptomic cell type structures in vivo neuronal activity across multiple timescales (Cell Reports 2023)</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <table class="research-area-table">
+    <tr>
+      <td><img class="research-image" src="images/AugmentedCat.png" alt="Self-supervised learning and behavior embeddings"></td>
       <td>
         <h3>🔁 Self-Supervised and Contrastive Learning</h3>
-        <p>We apply self-supervised methods to reveal hidden patterns in neural and behavioral data. Our models learn structured representations without labels, discovering multiscale behavior and neural motifs.</p>
+        <p>We develop self-supervised and contrastive learning methods that uncover structure in neural, behavioral, and biological data without requiring labels. Our work focuses on multiscale representation learning, event-driven objectives, and transfer across datasets, tasks, and modalities.</p>
+
         <div class="feature-pubs">
           <strong>Featured Papers:</strong>
           <ul>
-            <li><a href="https://arxiv.org/abs/2303.08811" target="_blank">Relax, it doesn’t matter how you get there (NeurIPS 2023)</a></li>
-            <li><a href="https://arxiv.org/pdf/2111.02338" target="_blank">Drop, Swap, and Generate (NeurIPS 2021, Oral)</a></li>
+            <li><a href="https://arxiv.org/abs/2303.08811" target="_blank">Relax, it doesn't matter how you get there (NeurIPS 2023 Spotlight)</a></li>
+            <li><a href="https://arxiv.org/pdf/2502.20141" target="_blank">Your contrastive learning problem is secretly a distribution alignment problem (NeurIPS 2024)</a></li>
+            <li><a href="https://neurips.cc/virtual/2025/122131" target="_blank">A scalable self-supervised method for modeling human intracranial recordings during natural behavior (NeurIPS Workshop 2025)</a></li>
+            <li><a href="https://arxiv.org/pdf/2111.02338" target="_blank">Drop, Swap, and Generate (NeurIPS 2021 Oral)</a></li>
           </ul>
         </div>
       </td>
@@ -209,15 +258,37 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_2016_Abstract Manifold Art_simple_compose_01jvztaye3e4ytz8tvbzvjnq9x.png" alt="Domain adaptation visualization"></td>
+      <td><img class="research-image" src="images/20250523_2016_Abstract Manifold Art_simple_compose_01jvztaye3e4ytz8tvbzvjnq9x.png" alt="Neural forecasting and generative modeling"></td>
+      <td>
+        <h3>📈 Neural Forecasting and Generative Modeling</h3>
+        <p>We develop forecasting and generative models that predict neural and behavioral dynamics across multiple timescales. Our work studies how structured temporal representations, event-driven learning, and multiscale dynamics improve forecasting, simulation, and representation learning in biological systems.</p>
+
+        <div class="feature-pubs">
+          <strong>Featured Papers:</strong>
+          <ul>
+            <li><a href="https://arxiv.org/pdf/2512.24898" target="_blank">PRISM: A Hierarchical Multiscale Approach for Time Series Forecasting (2026)</a></li>
+            <li><a href="https://arxiv.org/abs/2407.14668" target="_blank">Towards a universal translator for neural dynamics at single-cell, single-spike resolution (NeurIPS 2024)</a></li>
+            <li><a href="https://arxiv.org/pdf/2111.02338" target="_blank">Drop, Swap, and Generate (NeurIPS 2021 Oral)</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <table class="research-area-table">
+    <tr>
+      <td><img class="research-image" src="images/20250523_2016_Abstract Manifold Art_simple_compose_01jvztaye3e4ytz8tvbzvjnq9x.png" alt="Domain adaptation and representation alignment"></td>
       <td>
         <h3>🌍 Domain Adaptation and Representation Alignment</h3>
-        <p>We design representation alignment methods that adapt across devices and conditions in time series data. Our channel-selective and Sinkhorn-based techniques improve model robustness and transfer.</p>
+        <p>We design representation alignment methods that adapt across subjects, devices, datasets, and recording conditions. Our work uses optimal transport, distribution alignment, and domain generalization to build models that remain robust under real-world shifts in neural, behavioral, and physiological time series.</p>
+
         <div class="feature-pubs">
           <strong>Featured Papers:</strong>
           <ul>
-            <li><a href="https://openreview.net/pdf?id=8C8LJIqF4y" target="_blank">Channel-Selective Representation Alignment (TMLR 2025)</a></li>
-            <li><a href="https://proceedings.mlr.press/v139/lin21a.html" target="_blank">Moving data through anchor points (ICML 2021)</a></li>
+            <li><a href="https://openreview.net/pdf?id=8C8LJIqF4y" target="_blank">Time Series Domain Adaptation via Channel-Selective Representation Alignment (TMLR 2025)</a></li>
+            <li><a href="https://arxiv.org/pdf/2502.20141" target="_blank">Your contrastive learning problem is secretly a distribution alignment problem (NeurIPS 2024)</a></li>
+            <li><a href="https://www.nature.com/articles/s41551-022-00962-7" target="_blank">Aligning latent representations of neural activity (Nature Biomedical Engineering 2022)</a></li>
+            <li><a href="https://proceedings.mlr.press/v139/lin21a.html" target="_blank">Making transport more robust and interpretable by moving data through anchor points (ICML 2021)</a></li>
           </ul>
         </div>
       </td>
@@ -226,32 +297,18 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_1959_Futuristic Neuron Network_simple_compose_01jvzsbj4cesms0r6r6jfrb0w4.png" alt="Cell type classification"></td>
-      <td>
-        <h3>🧬 Mapping Cell Types from Activity</h3>
-        <p>We build classifiers that use only neural activity to predict cell types and brain regions. Our contrastive approaches generalize across mice and modalities, bridging function and transcriptomics.</p>
-        <div class="feature-pubs">
-          <strong>Featured Papers:</strong>
-          <ul>
-            <li><a href="https://www.biorxiv.org/content/10.1101/2024.11.05.622159.abstract" target="_blank">Multimodal contrastive learning (ICLR 2025)</a></li>
-            <li><a href="https://www.cell.com/cell-reports/pdfExtended/S2211-1247(23)00329-7" target="_blank">Transcriptomic cell type structures (Cell Reports 2023)</a></li>
-          </ul>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-  <table class="research-area-table">
-    <tr>
-      <td><img class="research-image" src="images/20250523_2009_Graph Nodes Connections_simple_compose_01jvzsxrbzencb72dakj4tgrw6.png" alt="Graph upsampling illustration"></td>
+      <td><img class="research-image" src="images/20250523_2009_Graph Nodes Connections_simple_compose_01jvzsxrbzencb72dakj4tgrw6.png" alt="Graph learning"></td>
       <td>
         <h3>📊 Graph Learning</h3>
-        <p>Our lab advances graph neural network methods to model diverse graph datasets. We develop transformers and graph augmentation techniques for scalable and transferable graph learning.</p>
+        <p>We develop graph transformers, relational learning methods, and graph foundation models that learn transferable representations across diverse graph domains. Our work studies scalable graph pretraining, multimodal relational learning, and representation transfer across heterogeneous graph structures.</p>
+
         <div class="feature-pubs">
           <strong>Featured Papers:</strong>
           <ul>
-            <li><a href="http://proceedings.mlr.press/v202/azabou23a/azabou23a.pdf" target="_blank">Half-Hop (ICML 2023)</a></li>
-            <li><a href="https://arxiv.org/abs/2407.11907" target="_blank">GraphFM (arXiv 2024)</a></li>
+            <li><a href="https://arxiv.org/abs/2407.11907" target="_blank">GraphFM: A generalist graph transformer that learns transferable representations across diverse domains (TMLR 2025)</a></li>
+            <li><a href="https://openreview.net/forum?id=fcVIJ2WSIX" target="_blank">RGP: A Cross-Attention based Graph Transformer for Relational Deep Learning (LOG 2025)</a></li>
+            <li><a href="https://neurips.cc/virtual/2025/127657" target="_blank">RELATE: A Schema-Agnostic Cross-Attention Encoder for Multimodal Relational Graphs (NeurIPS Workshop 2025)</a></li>
+            <li><a href="http://proceedings.mlr.press/v202/azabou23a/azabou23a.pdf" target="_blank">Half-Hop: A graph upsampling approach for slowing down message passing (ICML 2023)</a></li>
           </ul>
         </div>
       </td>
@@ -271,16 +328,15 @@
       <a href="https://www.cifar.ca" target="_blank" rel="noopener">
         <img src="images/funding/cifarlogo.jpg" alt="CIFAR" />
       </a>
-       <a href="https://www.upenn.edu" target="_blank" rel="noopener">
+      <a href="https://www.upenn.edu" target="_blank" rel="noopener">
         <img src="images/funding/HF_Logo_Wordmark_03.png" alt="HF" />
-      </a> 
+      </a>
       <a href="https://www.upenn.edu" target="_blank" rel="noopener">
         <img src="images/funding/pennlogo.png" alt="PENN" />
-      </a> 
+      </a>
     </div>
   </section>
-  
 
 </main>
 </body>
-</html>       
+</html>
