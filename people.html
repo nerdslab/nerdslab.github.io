@@ -97,6 +97,33 @@
       max-width: 750px;
     }
 
+
+    .profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 1.5em 0 2em 0;
+}
+
+.bio-photo {
+  width: 220px;
+  max-width: 220px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    display: block;
+  }
+
+  .bio-photo {
+    margin-bottom: 1em;
+  }
+}
+
     ul {
       padding-left: 1.2em;
     }
