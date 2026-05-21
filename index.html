@@ -96,16 +96,55 @@
     main {
       max-width: 800px;
       margin: 0 auto;
-      padding: 3em 2em 2em;
+      padding: 3em 2em 10em;
       flex: 1;
       position: relative;
     }
 
     h2 {
-      font-size: 1.5em;
+      font-size: 2.5em;
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
       margin-bottom: 1em;
+    }
+
+    .home-actions {
+      --home-action-color: #222;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 36px;
+      justify-content: center;
+      margin-top: 3em;
+    }
+
+    .home-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      padding: 0.75em 1.15em 0.75em 1.25em;
+      border: 1px solid var(--home-action-color);
+      border-radius: 999px;
+      color: #fff;
+      background: var(--home-action-color);
+      font-weight: 600;
+      line-height: 1.2;
+      text-decoration: none;
+      transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+
+    .home-actions a::after {
+      content: "\2192";
+      font-size: 1.1em;
+      line-height: 1;
+      transition: transform 160ms ease;
+    }
+
+    .home-actions a:hover {
+      transform: translateY(-1px);
+    }
+
+    .home-actions a:hover::after {
+      transform: translateX(3px);
     }
 
     footer {
@@ -144,6 +183,15 @@
     left: 10px;
     right: 10px;
   }
+
+  .home-actions {
+    gap: 8px;
+  }
+
+  .home-actions a {
+    flex: 1 1 160px;
+    text-align: center;
+  }
 }
 
   </style>
@@ -172,13 +220,18 @@
 
   <main>
     <h2>Welcome to the NerDS Lab</h2>
-    <p>The Neural Data Science (NerDS) Lab at the University of Pennsylvania develops next-generation machine learning methods to unlock the mysteries of the brain. We are driven by the belief that artificial intelligence and neuroscience can inform each other, and that building scalable, interpretable models of brain activity will lead to breakthroughs in both fields.</p>
+    <p>The <strong>Neural Data Science (NerDS) Lab</strong> at the University of Pennsylvania develops next-generation machine learning methods to unlock the mysteries of the brain. We are driven by the belief that artificial intelligence and neuroscience can inform each other, and that building scalable, interpretable models of brain activity will lead to breakthroughs in both fields.</p>
 
     <p>Our vision is to create models that generalize across individuals, tasks, brain regions, and even species—models that reveal latent computational principles of biological intelligence. To achieve this, we integrate advances in deep learning, self-supervised learning, and representation alignment with cutting-edge neural datasets.</p>
 
     <p>In parallel, we are committed to building open-source software and reproducible research tools that empower scientists to analyze complex time series data and neural recordings at scale. Whether it’s decoding neural dynamics or understanding the structure of behavior, our goal is to develop technologies that not only work, but also help explain why.</p>
+
+    <div class="home-actions">
+      <a href="about.html#research-areas">Explore Research</a>
+      <a href="nerdslabcode.html">Explore Software</a>
+    </div>
   </main>
 
-<script src="header-scroll.js"></script>
+<script src="header_scroll/header-scroll.js"></script>
 </body>
 </html>

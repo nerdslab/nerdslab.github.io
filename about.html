@@ -90,24 +90,41 @@
     }
 
     h3 {
+      font-size: 1.5em;
       margin-top: 0;
+      margin-bottom: 0em;
+    }
+
+    .research-area-table h3 + p {
+      margin-top: 0.7em;
     }
 
     .research-area-table {
       width: 100%;
-      margin-bottom: 3em;
+      margin-bottom: 2em;
       border-collapse: collapse;
+      table-layout: fixed;
     }
 
     .research-area-table td {
       vertical-align: top;
-      padding: 10px;
+      padding: 10px 0;
+    }
+
+    .research-image-cell {
+      width: 320px;
+      padding-top: 30px !important;
+      padding-right: 30px !important;
     }
 
     .research-image {
-      width: 240px;
+      width: 300px;
+      max-width: 100%;
+      border: 4px solid #e2e0d6;
       border-radius: 8px;
-      margin-top: 18px;
+      box-sizing: border-box;
+      display: block;
+      margin: 0 0 1em;
     }
 
     .feature-pubs {
@@ -169,23 +186,30 @@
         margin-top: 1em;
       }
 
+      main {
+        padding: 2em 1.2em;
+      }
+
       .research-area-table,
       .research-area-table tbody,
       .research-area-table tr,
       .research-area-table td {
+        display: block;
+        width: 100%;
         vertical-align: top;
         padding: 22px;
         }
 
-      .research-area-table td:first-child {
-        padding-top: 48px;
+      .research-image-cell {
+        position: static;
+        padding-right: 22px !important;
       }
 
       .research-image {
         width: 100%;
         max-width: 320px;
         display: block;
-        margin: 0 auto 1em auto;
+        margin: 0.75em auto 1em;
       }
     }
   </style>
@@ -208,17 +232,23 @@
 </header>
 
 <main>
-  <h2>About the NerDS Lab</h2>
+  <section id="nerds-lab">
+    <h2>NerDS Lab</h2>
 
-  <p>The <strong>Neural Data Science (NerDS) Lab</strong> develops foundation models and representation learning methods for neuroscience, behavior, and biological systems. Our research combines machine learning, neural data analysis, and AI for science to build scalable models that decode neural computation, learn transferable representations across animals and recording modalities, and uncover general principles of biological intelligence.</p>
+  <p>The <strong>Neural Data Science (NerDS) Lab</strong> develops machine learning methods for understanding neural activity, behavior, and biological systems. We build foundation models and representation learning approaches that decode neural activity, model neural and behavioral dynamics, and identify shared structure across animals, brain regions, and recording modalities.</p>
 
-  <p>We work on neural foundation models, self-supervised learning, neural forecasting, graph representation learning, and multimodal AI systems that integrate behavior, neural activity, and biological structure across scales.</p>
+  <p>Our research spans neural foundation models, self-supervised learning, neural forecasting, graph representation learning, and multimodal models that connect neural activity, behavior, and biological structure.</p>
+
+  </section>
+
+  <section id="research-areas">
+    <h2>Research Areas</h2>
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_1818_Neural Network Brainscape_simple_compose_01jvzkjmsqe4ha7x3sbrkcd800.png" alt="Neural foundation models"></td>
+      <td class="research-image-cell"><img class="research-image" src="images/neural_foundation_model_picture.png" alt="Neural foundation models"></td>
       <td>
-        <h3>🧠 Neural Foundation Models</h3>
+        <h3>Neural Foundation Models</h3>
         <p>We develop large-scale foundation models for neural activity that learn transferable representations across animals, brain regions, recording modalities, and behavioral tasks. Our work studies how large-scale pretraining enables zero-shot decoding, neural forecasting, and the discovery of shared computational principles across neural systems.</p>
 
         <div class="feature-pubs">
@@ -236,9 +266,9 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_1959_Futuristic Neuron Network_simple_compose_01jvzsbj4cesms0r6r6jfrb0w4.png" alt="Neuron identity and brain organization"></td>
+      <td class="research-image-cell"><img class="research-image" src="images/neuron_identity_and_brain_organization.png" alt="Neuron identity and brain organization"></td>
       <td>
-        <h3>🧬 Neuron Identity and Brain Organization</h3>
+        <h3>Neuron Identity and Brain Organization</h3>
         <p>We build machine learning systems that reveal structure in large-scale neural recordings, including representations of neuron identity, brain regions, cell types, and population dynamics. Our models learn from neural activity directly and generalize across animals, sessions, and experimental conditions.</p>
 
         <div class="feature-pubs">
@@ -255,9 +285,9 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/AugmentedCat.png" alt="Self-supervised learning and behavior embeddings"></td>
+      <td class="research-image-cell"><img class="research-image" src="images/self-supervised_and_contrastive_learning.png" alt="Self-supervised learning and behavior embeddings"></td>
       <td>
-        <h3>🔁 Self-Supervised and Contrastive Learning</h3>
+        <h3>Self-Supervised and Contrastive Learning</h3>
         <p>We develop self-supervised and contrastive learning methods that uncover structure in neural, behavioral, and biological data without requiring labels. Our work focuses on multiscale representation learning, event-driven objectives, and transfer across datasets, tasks, and modalities.</p>
 
         <div class="feature-pubs">
@@ -274,9 +304,9 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_2016_Abstract Manifold Art_simple_compose_01jvztaye3e4ytz8tvbzvjnq9x.png" alt="Neural forecasting and generative modeling"></td>
+      <td class="research-image-cell"><img class="research-image" src="images/neural_forecasting_and_generative_modeling.png" alt="Neural forecasting and generative modeling"></td>
       <td>
-        <h3>📈 Neural Forecasting and Generative Modeling</h3>
+        <h3>Neural Forecasting and Generative Modeling</h3>
         <p>We develop forecasting and generative models that predict neural and behavioral dynamics across multiple timescales. Our work studies how structured temporal representations, event-driven learning, and multiscale dynamics improve forecasting, simulation, and representation learning in biological systems.</p>
 
         <div class="feature-pubs">
@@ -293,9 +323,9 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_2016_Abstract Manifold Art_simple_compose_01jvztaye3e4ytz8tvbzvjnq9x.png" alt="Domain adaptation and representation alignment"></td>
+      <td class="research-image-cell"><img class="research-image" src="images/domain_adaptation_and_representation_alignment.png" alt="Domain adaptation and representation alignment"></td>
       <td>
-        <h3>🌍 Domain Adaptation and Representation Alignment</h3>
+        <h3>Domain Adaptation and Representation Alignment</h3>
         <p>We design representation alignment methods that adapt across subjects, devices, datasets, and recording conditions. Our work uses optimal transport, distribution alignment, and domain generalization to build models that remain robust under real-world shifts in neural, behavioral, and physiological time series.</p>
 
         <div class="feature-pubs">
@@ -313,9 +343,9 @@
 
   <table class="research-area-table">
     <tr>
-      <td><img class="research-image" src="images/20250523_2009_Graph Nodes Connections_simple_compose_01jvzsxrbzencb72dakj4tgrw6.png" alt="Graph learning"></td>
+      <td class="research-image-cell"><img class="research-image" src="images/graph_learning.png" alt="Graph learning"></td>
       <td>
-        <h3>📊 Graph Learning</h3>
+        <h3>Graph Learning</h3>
         <p>We develop graph transformers, relational learning methods, and graph foundation models that learn transferable representations across diverse graph domains. Our work studies scalable graph pretraining, multimodal relational learning, and representation transfer across heterogeneous graph structures.</p>
 
         <div class="feature-pubs">
@@ -330,7 +360,9 @@
     </tr>
   </table>
 
-  <section id="funding" style="padding: 2em 0;">
+  </section>
+
+  <section id="funding">
     <h2>Funding</h2>
     <p>We are fortunate to receive funding from the following sources:</p>
     <div class="funding-grid">
@@ -353,6 +385,6 @@
   </section>
 
 </main>
-<script src="header-scroll.js"></script>
+<script src="header_scroll/header-scroll.js"></script>
 </body>
 </html>
